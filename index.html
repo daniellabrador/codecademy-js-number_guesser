@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Number Guesser</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Number Guesser!</h1>
+      </header>
+      
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Computer</p>
+            <p class="score-label">Score: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">You</p>
+            <p class="score-label">Score: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" min=0 max=9 value=0>
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button" id="guess">Make a Guess</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Next Round</button>
+      </div>
+
+    </div>
+    
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Step 1</h3>
+        <p>Input a number between 0 and 9</p>
+      </div>
+      <div class="instruction">
+        <h3>Step 2</h3>
+        <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+      </div>
+      <div class="instruction">
+        <h3>Step 3</h3>
+        <p>Click "Next Round" to play again.</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./game.js"></script>
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'68c6176c9cfd204d',m:'0PJfFa00emiwYPIxcSeZh0BySEOUW_pnVyrJ9ZicWzk-1631250014-0-ATsPEeEsgzlF48N90AL6TbT8A6MG5wVAKsSn9IirU+45Cj4Ber7BFQEMfCSkfvIu1ysm8Z0UYgxn6nXZGqLDqD52RHXTuZpmiX2M6ejV3O3iUEaXz020/g/r4AMBwywO/mmS6L1A+7WZEgOTOF5wFbtMZFScOBWisx4UwEXHs35Kqftczzpb5c43IRbrA6w/EyhgqgiQGS2yM6NOef+cSHw=',s:[0xa8d1706312,0x6929eaf007],}})();</script></body>
+</html>
